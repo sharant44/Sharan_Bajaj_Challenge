@@ -1,0 +1,106 @@
+/* Enhanced Dark Theme */
+
+:root {
+  --primary-bg: #1a1a1a;
+  --secondary-bg: #ffffff; /* Darkened secondary background */
+  --card-bg: #262626;     /* Slightly brighter text color */
+  --accent-color: #4ea1d3; /* New accent color: soft blue */
+  --button-bg: #4ea1d3;    /* Button color matching the accent */
+  --button-hover-bg: #3a91bc; /* Slightly darker blue for hover */
+  --shadow-color: rgba(0, 0, 0, 0.4); /* Slightly stronger shadow */
+  --border-radius: 8px;    /* Reduced border-radius for sharper corners */
+  --transition: 0.3s ease;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.app-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 1rem;
+  min-height: auto;
+  width: 90vw; /* Restrict the width so it doesn't stretch too much */
+}
+
+textarea, select {
+  background-color: var(--secondary-bg);
+  color: black; /* Set the dropdown text color to black */
+  border: none;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px var(--shadow-color);
+  outline: none;
+  transition: box-shadow var(--transition);
+}
+
+textarea:focus, select:focus {
+  box-shadow: 0 6px 8px var(--shadow-color);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  padding: 12px 30px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  margin-left: 45%;
+  margin-bottom: 20px;
+  transition: background-color var(--transition), box-shadow var(--transition);
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+  box-shadow: 0 6px 8px var(--shadow-color);
+}
+
+.response-section {
+  background-color: white;
+  color: black;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 8px 12px var(--shadow-color);
+}
+
+.response-title {
+  color: black;
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+}
+
+.response-data {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.dropdown-container {
+  margin: 1.5rem 0;
+}
+
+select, option {
+  color: black; /* Ensure the text color is black for the dropdown and options */
+  padding: 10px;
+  background-color: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 100px;
+}
